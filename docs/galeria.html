@@ -1,57 +1,80 @@
 <!doctype html>
 <html lang="es">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="/styles/hamburger.css">
+	<script src="/scritps/hamburger.js"></script>
 	<title>Galería</title>
 </head>
+
 <body>
 	<header class="site-header">
+		<input id="nav-toggle" class="nav-toggle" type="checkbox" aria-hidden="true">
+		<label for="nav-toggle" class="hamburger" aria-label="Abrir menú">
+			<span></span><span></span><span></span>
+		</label>
 		<nav class="main-nav">
-			<a class="nav-logo" href="index.html">Interact Tegucigalpa Sur</a>
-			<ul class="nav-list">
-				<li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-				<li class="nav-item"><a class="nav-link" href="about-us.html">Acerca</a></li>
-				<li class="nav-item"><a class="nav-link" href="programas.html">Programas</a></li>
-				<li class="nav-item"><a class="nav-link" href="ayuda.html">Cómo Ayudar</a></li>
-				<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-				<li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
-				<li class="nav-item"><a class="nav-link" href="donations.html">Donar</a></li>
-				<li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-				<li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-			</ul>
+			<a class="nav-logo" href="index.html"><img src="https://picsum.photos/64/64" alt="Logo"><span
+					class="site-title">Interact Tegucigalpa Sur</span></a>
 		</nav>
+		<div class="nav-overlay" aria-hidden="true">
+			<div class="nav-panel">
+				<button class="close-panel" aria-label="Cerrar menú">&times;</button>
+				<ul class="nav-list-overlay">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="programas.html">Programas</a></li>
+					<li><a href="about-us.html">Acerca</a></li>
+					<li><a href="ayuda.html">Cómo Ayudar</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="eventos.html">Eventos</a></li>
+					<li><a href="donations.html">Donar</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+				</ul>
+			</div>
+		</div>
 	</header>
 
 	<main class="site-main">
 		<section class="section gallery-hero">
 			<h1 class="section-title">Galería de Momentos</h1>
-			<p>Revisa nuestros mejores momentos de voluntariado, eventos comunitarios y actividades de impacto social. Cada foto representa el compromiso de nuestros jóvenes líderes con la transformación de Tegucigalpa Sur.</p>
+			<p>Revisa nuestros mejores momentos de voluntariado, eventos comunitarios y actividades de impacto social.
+				Cada foto representa el compromiso de nuestros jóvenes líderes con la transformación de Tegucigalpa Sur.
+			</p>
 		</section>
 
 		<section class="section gallery-grid">
 			<figure class="gallery-item">
-				<img class="gallery-img" src="https://picsum.photos/seed/interact1/300/400" alt="Actividad Comunitaria 1"/>
+				<img class="gallery-img" src="https://picsum.photos/seed/interact1/300/400"
+					alt="Actividad Comunitaria 1" />
 				<figcaption>Image1</figcaption>
 			</figure>
 			<figure class="gallery-item">
-				<img class="gallery-img" src="https://picsum.photos/seed/interact2/300/400" alt="Voluntarios en Acción"/>
+				<img class="gallery-img" src="https://picsum.photos/seed/interact2/300/400"
+					alt="Voluntarios en Acción" />
 				<figcaption>Image2</figcaption>
 			</figure>
 			<figure class="gallery-item">
-				<img class="gallery-img" src="https://picsum.photos/seed/interact3/300/400" alt="Entrega de Donativos"/>
+				<img class="gallery-img" src="https://picsum.photos/seed/interact3/300/400"
+					alt="Entrega de Donativos" />
 				<figcaption>Image3</figcaption>
 			</figure>
 			<figure class="gallery-item">
-				<img class="gallery-img" src="https://picsum.photos/seed/interact4/300/400" alt="Taller Educativo"/>
+				<img class="gallery-img" src="https://picsum.photos/seed/interact4/300/400" alt="Taller Educativo" />
 				<figcaption>Image4</figcaption>
 			</figure>
 			<figure class="gallery-item">
-				<img class="gallery-img" src="https://picsum.photos/seed/interact5/300/400" alt="Actividades Sociales"/>
+				<img class="gallery-img" src="https://picsum.photos/seed/interact5/300/400"
+					alt="Actividades Sociales" />
 				<figcaption>Image5</figcaption>
 			</figure>
 			<figure class="gallery-item">
-				<img class="gallery-img" src="https://picsum.photos/seed/interact6/300/400" alt="Celebración de Logros"/>
+				<img class="gallery-img" src="https://picsum.photos/seed/interact6/300/400"
+					alt="Celebración de Logros" />
 				<figcaption>Image6</figcaption>
 			</figure>
 		</section>
@@ -61,4 +84,5 @@
 		<p>&copy; 2025 Interact Tegucigalpa Sur</p>
 	</footer>
 </body>
+
 </html>

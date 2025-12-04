@@ -1,53 +1,83 @@
 <!doctype html>
 <html lang="es">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="/styles/hamburger.css">
+	<script src="/scritps/hamburger.js"></script>
 	<title>Blog</title>
 </head>
+
 <body>
 	<header class="site-header">
+		<input id="nav-toggle" class="nav-toggle" type="checkbox" aria-hidden="true">
+		<label for="nav-toggle" class="hamburger" aria-label="Abrir menú">
+			<span></span><span></span><span></span>
+		</label>
 		<nav class="main-nav">
-			<a class="nav-logo" href="index.html">Interact Tegucigalpa Sur</a>
-			<ul class="nav-list">
-				<li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-				<li class="nav-item"><a class="nav-link" href="about-us.html">Acerca</a></li>
-				<li class="nav-item"><a class="nav-link" href="programas.html">Programas</a></li>
-				<li class="nav-item"><a class="nav-link" href="ayuda.html">Cómo Ayudar</a></li>
-				<li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
-				<li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
-				<li class="nav-item"><a class="nav-link" href="donations.html">Donar</a></li>
-				<li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-				<li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-			</ul>
+			<a class="nav-logo" href="index.html"><img src="https://picsum.photos/64/64" alt="Logo"><span
+					class="site-title">Interact Tegucigalpa Sur</span></a>
 		</nav>
+		<div class="nav-overlay" aria-hidden="true">
+			<div class="nav-panel">
+				<button class="close-panel" aria-label="Cerrar menú">&times;</button>
+				<ul class="nav-list-overlay">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="programas.html">Programas</a></li>
+					<li><a href="about-us.html">Acerca</a></li>
+					<li><a href="ayuda.html">Cómo Ayudar</a></li>
+					<li><a href="galeria.html">Galería</a></li>
+					<li><a href="eventos.html">Eventos</a></li>
+					<li><a href="donations.html">Donar</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+				</ul>
+			</div>
+		</div>
 	</header>
 
 	<main class="site-main">
 		<section class="section blog-hero">
 			<h1 class="section-title">Nuestro Blog</h1>
-			<p>Historias, noticias y reflexiones sobre nuestras iniciativas de servicio comunitario, los logros de nuestros voluntarios y el impacto que generamos en Tegucigalpa Sur.</p>
+			<p>Historias, noticias y reflexiones sobre nuestras iniciativas de servicio comunitario, los logros de
+				nuestros voluntarios y el impacto que generamos en Tegucigalpa Sur.</p>
 		</section>
 
 		<section class="section posts">
 			<article class="post">
 				<h2 class="post-title">La Importancia del Voluntariado Juvenil</h2>
-				<p class="post-excerpt">El voluntariado es más que una acción; es un compromiso con el cambio. En Interact Tegucigalpa Sur, creemos que los jóvenes tienen el poder de transformar sus comunidades. A través del servicio desinteresado, desarrollamos liderazgo, empatía y responsabilidad social que nos prepara para ser los agentes de cambio que nuestro país necesita.</p>
+				<p class="post-excerpt">El voluntariado es más que una acción; es un compromiso con el cambio. En
+					Interact Tegucigalpa Sur, creemos que los jóvenes tienen el poder de transformar sus comunidades. A
+					través del servicio desinteresado, desarrollamos liderazgo, empatía y responsabilidad social que nos
+					prepara para ser los agentes de cambio que nuestro país necesita.</p>
 			</article>
 
 			<article class="post">
 				<h2 class="post-title">Cuatro Años de Impacto Social (2021-2025)</h2>
-				<p class="post-excerpt">Desde nuestra fundación en mayo de 2021, hemos crecido de un grupo pequeño a un equipo vibrante de voluntarios. Hemos realizado cientos de jornadas de limpieza, entregado donaciones a cientos de familias, ofrecido tutorías escolares y capacitaciones en habilidades blandas. Este viaje ha sido posible gracias a cada voluntario, donante y aliado que cree en nuestra misión.</p>
+				<p class="post-excerpt">Desde nuestra fundación en mayo de 2021, hemos crecido de un grupo pequeño a un
+					equipo vibrante de voluntarios. Hemos realizado cientos de jornadas de limpieza, entregado
+					donaciones a cientos de familias, ofrecido tutorías escolares y capacitaciones en habilidades
+					blandas. Este viaje ha sido posible gracias a cada voluntario, donante y aliado que cree en nuestra
+					misión.</p>
 			</article>
 
 			<article class="post">
 				<h2 class="post-title">Misión y Visión: Nuestro Camino Hacia Adelante</h2>
-				<p class="post-excerpt">Nuestra misión es promover el liderazgo juvenil y el servicio comunitario en Tegucigalpa Sur. Nuestra visión es ser el referente local de voluntariado juvenil, formando líderes empáticos capaces de transformar su entorno. Cada proyecto que ejecutamos, cada persona que servimos, nos acerca más a esa visión compartida.</p>
+				<p class="post-excerpt">Nuestra misión es promover el liderazgo juvenil y el servicio comunitario en
+					Tegucigalpa Sur. Nuestra visión es ser el referente local de voluntariado juvenil, formando líderes
+					empáticos capaces de transformar su entorno. Cada proyecto que ejecutamos, cada persona que
+					servimos, nos acerca más a esa visión compartida.</p>
 			</article>
 
 			<article class="post">
 				<h2 class="post-title">¿Por Qué Unirse a Interact?</h2>
-				<p class="post-excerpt">Si buscas un espacio donde aprender, crecer y hacer la diferencia, Interact Tegucigalpa Sur es el lugar indicado. Aquí encontrarás amigos que comparten tu pasión por el servicio, mentores que te guiarán, y oportunidades para desarrollar habilidades de liderazgo que te prepararán para los desafíos del futuro. ¡Únete a nuestro movimiento!</p>
+				<p class="post-excerpt">Si buscas un espacio donde aprender, crecer y hacer la diferencia, Interact
+					Tegucigalpa Sur es el lugar indicado. Aquí encontrarás amigos que comparten tu pasión por el
+					servicio, mentores que te guiarán, y oportunidades para desarrollar habilidades de liderazgo que te
+					prepararán para los desafíos del futuro. ¡Únete a nuestro movimiento!</p>
 			</article>
 		</section>
 	</main>
@@ -56,4 +86,5 @@
 		<p>&copy; 2025 Interact Tegucigalpa Sur</p>
 	</footer>
 </body>
+
 </html>
