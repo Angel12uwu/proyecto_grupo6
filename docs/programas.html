@@ -1,50 +1,71 @@
 <!doctype html>
 <html lang="es">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="/styles/hamburger.css">
+	<script src="/scritps/hamburger.js"></script>
 	<title>Programas</title>
 </head>
+
 <body>
 	<header class="site-header">
+		<input id="nav-toggle" class="nav-toggle" type="checkbox" aria-hidden="true">
+		<label for="nav-toggle" class="hamburger" aria-label="Abrir menú">
+			<span></span><span></span><span></span>
+		</label>
 		<nav class="main-nav">
-			<a class="nav-logo" href="index.html">Interact Tegucigalpa Sur</a>
-			<ul class="nav-list">
-				<li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-				<li class="nav-item"><a class="nav-link" href="about-us.html">Acerca</a></li>
-				<li class="nav-item"><a class="nav-link" href="ayuda.html">Cómo Ayudar</a></li>
-				<li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
-				<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-				<li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
-				<li class="nav-item"><a class="nav-link" href="donations.html">Donar</a></li>
-				<li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-				<li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-			</ul>
+			<a class="nav-logo" href="index.html"><img src="https://picsum.photos/64/64" alt="Logo"><span
+					class="site-title">Interact Tegucigalpa Sur</span></a>
 		</nav>
+		<div class="nav-overlay" aria-hidden="true">
+			<div class="nav-panel">
+				<button class="close-panel" aria-label="Cerrar menú">&times;</button>
+				<ul class="nav-list-overlay">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="about-us.html">Acerca</a></li>
+					<li><a href="ayuda.html">Cómo Ayudar</a></li>
+					<li><a href="galeria.html">Galería</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="eventos.html">Eventos</a></li>
+					<li><a href="donations.html">Donar</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+				</ul>
+			</div>
+		</div>
 	</header>
 
 	<main class="site-main">
 		<section class="section programs-hero">
 			<h1 class="section-title">Nuestros Proyectos y Programas</h1>
-			<p>Conoce los programas y actividades que desarrollamos para generar impacto positivo en la comunidad de Tegucigalpa Sur.</p>
+			<p>Conoce los programas y actividades que desarrollamos para generar impacto positivo en la comunidad de
+				Tegucigalpa Sur.</p>
 		</section>
 
 		<section class="section programs-list">
 			<article class="program-card">
 				<h2 class="program-title">Proyecto 1: Apoyo a Familias (2021-2022)</h2>
-				<p class="program-desc">Recolección de alimentos y apoyo inmediato a familias afectadas por la pandemia. Campañas de higiene personal y jornadas de limpieza en parques comunitarios.</p>
+				<p class="program-desc">Recolección de alimentos y apoyo inmediato a familias afectadas por la pandemia.
+					Campañas de higiene personal y jornadas de limpieza en parques comunitarios.</p>
 			</article>
 			<article class="program-card">
 				<h2 class="program-title">Proyecto 2: Consolidación Organizacional (2023)</h2>
-				<p class="program-desc">Creación de comités internos de proyectos, comunicación y recaudación. Programa de tutorías escolares, talleres informativos y visitas a asilos y organizaciones comunitarias.</p>
+				<p class="program-desc">Creación de comités internos de proyectos, comunicación y recaudación. Programa
+					de tutorías escolares, talleres informativos y visitas a asilos y organizaciones comunitarias.</p>
 			</article>
 			<article class="program-card">
 				<h2 class="program-title">Proyecto 3: Expansión Comunitaria (2024)</h2>
-				<p class="program-desc">Extensión de actividades a nuevas colonias. Jornadas de salud preventiva, capacitaciones en habilidades blandas y campañas ambientales de mayor escala.</p>
+				<p class="program-desc">Extensión de actividades a nuevas colonias. Jornadas de salud preventiva,
+					capacitaciones en habilidades blandas y campañas ambientales de mayor escala.</p>
 			</article>
 			<article class="program-card">
 				<h2 class="program-title">Proyecto 4: Formación de Líderes (2025)</h2>
-				<p class="program-desc">Continuamos ampliando nuestro alcance, fortaleciendo la formación de líderes comunitarios jóvenes y ejecutando proyectos de impacto sostenible y educativo.</p>
+				<p class="program-desc">Continuamos ampliando nuestro alcance, fortaleciendo la formación de líderes
+					comunitarios jóvenes y ejecutando proyectos de impacto sostenible y educativo.</p>
 			</article>
 		</section>
 	</main>
@@ -53,4 +74,5 @@
 		<p>&copy; 2025 Interact Tegucigalpa Sur</p>
 	</footer>
 </body>
+
 </html>

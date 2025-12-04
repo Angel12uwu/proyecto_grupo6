@@ -1,32 +1,50 @@
 <!doctype html>
 <html lang="es">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="/styles/hamburger.css">
+	<script src="/scritps/hamburger.js"></script>
 	<title>Donaciones</title>
 </head>
+
 <body>
 	<header class="site-header">
+		<input id="nav-toggle" class="nav-toggle" type="checkbox" aria-hidden="true">
+		<label for="nav-toggle" class="hamburger" aria-label="Abrir menú">
+			<span></span><span></span><span></span>
+		</label>
 		<nav class="main-nav">
-			<a class="nav-logo" href="index.html">Interact Tegucigalpa Sur</a>
-			<ul class="nav-list">
-				<li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-				<li class="nav-item"><a class="nav-link" href="about-us.html">Acerca</a></li>
-				<li class="nav-item"><a class="nav-link" href="programas.html">Programas</a></li>
-				<li class="nav-item"><a class="nav-link" href="ayuda.html">Cómo Ayudar</a></li>
-				<li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
-				<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-				<li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
-				<li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-				<li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-			</ul>
+			<a class="nav-logo" href="index.html"><img src="https://picsum.photos/64/64" alt="Logo"><span
+					class="site-title">Interact Tegucigalpa Sur</span></a>
 		</nav>
+		<div class="nav-overlay" aria-hidden="true">
+			<div class="nav-panel">
+				<button class="close-panel" aria-label="Cerrar menú">&times;</button>
+				<ul class="nav-list-overlay">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="about-us.html">Acerca</a></li>
+					<li><a href="programas.html">Programas</a></li>
+					<li><a href="ayuda.html">Cómo Ayudar</a></li>
+					<li><a href="galeria.html">Galería</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="eventos.html">Eventos</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+				</ul>
+			</div>
+		</div>
 	</header>
 
 	<main class="site-main">
 		<section class="section donations-hero">
 			<h1 class="section-title">Tus Donaciones Nos Ayudan a Seguir Creciendo</h1>
-			<p>Tu apoyo es fundamental para ejecutar nuestros proyectos y llegar a más familias en la comunidad de Tegucigalpa Sur. Todas las donaciones se usan exclusivamente para nuestras iniciativas de servicio social y ayuda directa a beneficiarios.</p>
+			<p>Tu apoyo es fundamental para ejecutar nuestros proyectos y llegar a más familias en la comunidad de
+				Tegucigalpa Sur. Todas las donaciones se usan exclusivamente para nuestras iniciativas de servicio
+				social y ayuda directa a beneficiarios.</p>
 		</section>
 
 		<section class="section donation-info">
@@ -60,15 +78,18 @@
 				</div>
 				<div class="form-group">
 					<label class="form-label" for="donor-email">Correo:</label>
-					<input class="form-control" id="donor-email" name="email" type="email" placeholder="tu@correo.com" />
+					<input class="form-control" id="donor-email" name="email" type="email"
+						placeholder="tu@correo.com" />
 				</div>
 				<div class="form-group">
 					<label class="form-label" for="donation-amount">Monto:</label>
-					<input class="form-control" id="donation-amount" name="amount" type="number" placeholder="Cantidad" min="1" />
+					<input class="form-control" id="donation-amount" name="amount" type="number" placeholder="Cantidad"
+						min="1" />
 				</div>
 				<div class="form-group">
 					<label class="form-label" for="donation-message">Mensaje (opcional)</label>
-					<textarea class="form-control" id="donation-message" name="message" placeholder="Mensaje para la organización"></textarea>
+					<textarea class="form-control" id="donation-message" name="message"
+						placeholder="Mensaje para la organización"></textarea>
 				</div>
 				<button class="btn" type="submit">Donar</button>
 			</form>
@@ -79,4 +100,5 @@
 		<p>&copy; 2025 Interact Tegucigalpa Sur</p>
 	</footer>
 </body>
+
 </html>

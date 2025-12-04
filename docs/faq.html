@@ -1,58 +1,88 @@
 <!doctype html>
 <html lang="es">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="/styles/hamburger.css">
+	<script src="/scritps/hamburger.js"></script>
 	<title>FAQ</title>
 </head>
+
 <body>
 	<header class="site-header">
+		<input id="nav-toggle" class="nav-toggle" type="checkbox" aria-hidden="true">
+		<label for="nav-toggle" class="hamburger" aria-label="Abrir menú">
+			<span></span><span></span><span></span>
+		</label>
 		<nav class="main-nav">
-			<a class="nav-logo" href="index.html">Interact Tegucigalpa Sur</a>
-			<ul class="nav-list">
-				<li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-				<li class="nav-item"><a class="nav-link" href="about-us.html">Acerca</a></li>
-				<li class="nav-item"><a class="nav-link" href="programas.html">Programas</a></li>
-				<li class="nav-item"><a class="nav-link" href="ayuda.html">Cómo Ayudar</a></li>
-				<li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
-				<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-				<li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
-				<li class="nav-item"><a class="nav-link" href="donations.html">Donar</a></li>
-				<li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-			</ul>
+			<a class="nav-logo" href="index.html"><img src="https://picsum.photos/64/64" alt="Logo"><span
+					class="site-title">Interact Tegucigalpa Sur</span></a>
 		</nav>
+		<div class="nav-overlay" aria-hidden="true">
+			<div class="nav-panel">
+				<button class="close-panel" aria-label="Cerrar menú">&times;</button>
+				<ul class="nav-list-overlay">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="about-us.html">Acerca</a></li>
+					<li><a href="programas.html">Programas</a></li>
+					<li><a href="ayuda.html">Cómo Ayudar</a></li>
+					<li><a href="galeria.html">Galería</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="eventos.html">Eventos</a></li>
+					<li><a href="donations.html">Donar</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</div>
+		</div>
 	</header>
 
 	<main class="site-main">
 		<section class="section faq-hero">
 			<h1 class="section-title">Preguntas Frecuentes</h1>
-			<p>Resolvemos tus dudas sobre Interact Tegucigalpa Sur, nuestras actividades, cómo participar y cómo ayudar.</p>
+			<p>Resolvemos tus dudas sobre Interact Tegucigalpa Sur, nuestras actividades, cómo participar y cómo ayudar.
+			</p>
 		</section>
 
 		<section class="section faq-list">
 			<div class="faq-item">
 				<h3 class="faq-question">¿Qué es Interact Tegucigalpa Sur?</h3>
-				<p class="faq-answer">Somos un club juvenil de servicio afiliado a Rotary International, orientado al liderazgo, el servicio social y el desarrollo personal de jóvenes de 12 a 18 años. Desde mayo de 2021, trabajamos en las comunidades del sur de Tegucigalpa promoviendo iniciativas sostenibles que generan impacto social positivo.</p>
+				<p class="faq-answer">Somos un club juvenil de servicio afiliado a Rotary International, orientado al
+					liderazgo, el servicio social y el desarrollo personal de jóvenes de 12 a 18 años. Desde mayo de
+					2021, trabajamos en las comunidades del sur de Tegucigalpa promoviendo iniciativas sostenibles que
+					generan impacto social positivo.</p>
 			</div>
 			<div class="faq-item">
 				<h3 class="faq-question">¿Cómo puedo unirme como voluntario?</h3>
-				<p class="faq-answer">Puedes completar nuestro formulario de voluntariado en la página "Cómo Ayudar". Allí nos cuentas por qué deseas ser voluntario y nos pondremos en contacto contigo. También puedes contactar directamente a Valeria Huezo al 9763-1808 o 8979-6870.</p>
+				<p class="faq-answer">Puedes completar nuestro formulario de voluntariado en la página "Cómo Ayudar".
+					Allí nos cuentas por qué deseas ser voluntario y nos pondremos en contacto contigo. También puedes
+					contactar directamente a Valeria Huezo al 9763-1808 o 8979-6870.</p>
 			</div>
 			<div class="faq-item">
 				<h3 class="faq-question">¿Cuáles son los próximos eventos?</h3>
-				<p class="faq-answer">Tenemos dos eventos principales en diciembre 2025: el Taller de Liderazgo con alumnos de UNITEC (6 de diciembre a las 9:00 AM) y la Entrega de Víveres en Casa David (20 de diciembre a las 9:00 AM). ¡Consulta nuestra página de Eventos para más detalles!</p>
+				<p class="faq-answer">Tenemos dos eventos principales en diciembre 2025: el Taller de Liderazgo con
+					alumnos de UNITEC (6 de diciembre a las 9:00 AM) y la Entrega de Víveres en Casa David (20 de
+					diciembre a las 9:00 AM). ¡Consulta nuestra página de Eventos para más detalles!</p>
 			</div>
 			<div class="faq-item">
 				<h3 class="faq-question">¿Qué necesita el club en este momento?</h3>
-				<p class="faq-answer">Priorizamos donaciones de alimentos no perecederos (arroz, frijoles, azúcar, aceite), artículos de higiene (jabón, pañales), ropa en buen estado y útiles escolares. También aceptamos donaciones monetarias para adquirir materiales educativos y apoyar nuestros programas.</p>
+				<p class="faq-answer">Priorizamos donaciones de alimentos no perecederos (arroz, frijoles, azúcar,
+					aceite), artículos de higiene (jabón, pañales), ropa en buen estado y útiles escolares. También
+					aceptamos donaciones monetarias para adquirir materiales educativos y apoyar nuestros programas.</p>
 			</div>
 			<div class="faq-item">
 				<h3 class="faq-question">¿Dónde puedo hacer una donación?</h3>
-				<p class="faq-answer">Puedes hacer donaciones de dos formas: transferencia bancaria a la cuenta BAC 756907951 a nombre de Genesis Valeria Álvarez Martinez, o entregas en especie en Centro Comercial Unicentro, Calle Orense, donde está la sede del Club Rotario Tegucigalpa Sur.</p>
+				<p class="faq-answer">Puedes hacer donaciones de dos formas: transferencia bancaria a la cuenta BAC
+					756907951 a nombre de Genesis Valeria Álvarez Martinez, o entregas en especie en Centro Comercial
+					Unicentro, Calle Orense, donde está la sede del Club Rotario Tegucigalpa Sur.</p>
 			</div>
 			<div class="faq-item">
 				<h3 class="faq-question">¿A quién benefician nuestros proyectos?</h3>
-				<p class="faq-answer">Nuestros proyectos benefician a niños, adolescentes, familias de escasos recursos, ancianos en centros de cuidado y escuelas públicas del sur de Tegucigalpa. Trabajamos directamente en aldeas y comunidades para crear el máximo impacto.</p>
+				<p class="faq-answer">Nuestros proyectos benefician a niños, adolescentes, familias de escasos recursos,
+					ancianos en centros de cuidado y escuelas públicas del sur de Tegucigalpa. Trabajamos directamente
+					en aldeas y comunidades para crear el máximo impacto.</p>
 			</div>
 		</section>
 	</main>
@@ -61,4 +91,5 @@
 		<p>&copy; 2025 Interact Tegucigalpa Sur</p>
 	</footer>
 </body>
+
 </html>

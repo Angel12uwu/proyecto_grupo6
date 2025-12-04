@@ -1,45 +1,66 @@
 <!doctype html>
 <html lang="es">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="/styles/hamburger.css">
+	<script src="/scritps/hamburger.js"></script>
 	<title>Eventos</title>
 </head>
+
 <body>
 	<header class="site-header">
+		<input id="nav-toggle" class="nav-toggle" type="checkbox" aria-hidden="true">
+		<label for="nav-toggle" class="hamburger" aria-label="Abrir menú">
+			<span></span><span></span><span></span>
+		</label>
 		<nav class="main-nav">
-			<a class="nav-logo" href="index.html">Interact Tegucigalpa Sur</a>
-			<ul class="nav-list">
-				<li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-				<li class="nav-item"><a class="nav-link" href="about-us.html">Acerca</a></li>
-				<li class="nav-item"><a class="nav-link" href="programas.html">Programas</a></li>
-				<li class="nav-item"><a class="nav-link" href="ayuda.html">Cómo Ayudar</a></li>
-				<li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
-				<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-				<li class="nav-item"><a class="nav-link" href="donations.html">Donar</a></li>
-				<li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-				<li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-			</ul>
+			<a class="nav-logo" href="index.html"><img src="https://picsum.photos/64/64" alt="Logo"><span
+					class="site-title">Interact Tegucigalpa Sur</span></a>
 		</nav>
+		<div class="nav-overlay" aria-hidden="true">
+			<div class="nav-panel">
+				<button class="close-panel" aria-label="Cerrar menú">&times;</button>
+				<ul class="nav-list-overlay">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="about-us.html">Acerca</a></li>
+					<li><a href="programas.html">Programas</a></li>
+					<li><a href="ayuda.html">Cómo Ayudar</a></li>
+					<li><a href="galeria.html">Galería</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="donations.html">Donar</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+				</ul>
+			</div>
+		</div>
 	</header>
 
 	<main class="site-main">
 		<section class="section events-hero">
 			<h1 class="section-title">Eventos Próximos</h1>
-			<p>Acompáñanos en nuestros eventos y actividades de diciembre 2025. ¡Tu participación nos ayuda a impulsar el cambio!</p>
+			<p>Acompáñanos en nuestros eventos y actividades de diciembre 2025. ¡Tu participación nos ayuda a impulsar
+				el cambio!</p>
 		</section>
 
 		<section class="events-list">
 			<article class="event-item">
 				<h2 class="event-title">Taller de Liderazgo - Alumnos de UNITEC</h2>
 				<p class="event-data">Fecha: 6 de Diciembre | Hora: 9:00 AM</p>
-				<p class="event-desc">Taller impartido a los socios y miembros del club por alumnos de UNITEC como proyecto final de su clase de Sociología. Una excelente oportunidad para fortalecer nuestras habilidades de liderazgo.</p>
+				<p class="event-desc">Taller impartido a los socios y miembros del club por alumnos de UNITEC como
+					proyecto final de su clase de Sociología. Una excelente oportunidad para fortalecer nuestras
+					habilidades de liderazgo.</p>
 			</article>
 
 			<article class="event-item">
 				<h2 class="event-title">Entrega de Víveres - Casa David</h2>
 				<p class="event-data">Fecha: 20 de Diciembre | Hora: 9:00 AM</p>
-				<p class="event-desc">Entrega de donaciones recibidas por parte del Equipo de New Life Run Club. Una actividad solidaria para llevar esperanza y apoyo a quienes más lo necesitan en nuestra comunidad.</p>
+				<p class="event-desc">Entrega de donaciones recibidas por parte del Equipo de New Life Run Club. Una
+					actividad solidaria para llevar esperanza y apoyo a quienes más lo necesitan en nuestra comunidad.
+				</p>
 			</article>
 		</section>
 	</main>
@@ -48,4 +69,5 @@
 		<p>&copy; 2025 Interact Tegucigalpa Sur</p>
 	</footer>
 </body>
+
 </html>
