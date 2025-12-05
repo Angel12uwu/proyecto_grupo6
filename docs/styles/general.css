@@ -32,27 +32,6 @@ body {
   margin-bottom: 1rem;
 }
 
-.hero p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-  line-height: 1.5;
-  margin-bottom: 1rem;
-}
-
-
-
-/*ul{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-a{
-  text-decoration: none;
-  color: #000;
-}*/
 
 .site-header {
   display: flex;
@@ -63,7 +42,6 @@ a{
   background: #17458f;
   color: #fff;
 }
-
 
 .nav-toggle {
   display: none;
@@ -112,8 +90,8 @@ a{
 
 .nav-logo .site-title {
   font-weight: 700;
-  font-size: 1.15rem;
-  color: inherit;
+  font-size: 2rem;
+  color: #fff;
 }
 
 .nav-list {

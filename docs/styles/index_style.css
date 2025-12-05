@@ -1,45 +1,67 @@
-.btn {
-  display: inline-block;
-  padding: 0.75rem 1.25rem;
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
-  background-color: #0077cc;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 1rem;
-  font-weight: 500;
-}
-
-.btn:hover {
-  background-color: #968b83;
-}
-
-.section.news {
-  margin-bottom: 2rem;
-}
-
-.section-title {
-  font-size: 1.5rem;
-  font-weight: 600;
+.hero p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  line-height: 1.5;
   margin-bottom: 1rem;
 }
 
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: #17458f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 1rem;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background-color: #968b83;
+}
+
 .news-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .news-item {
-  margin-bottom: 0.75rem;
+    margin-bottom: 0.75rem;
 }
 
 .news-item a {
-  color: #0077cc;
-  text-decoration: underline;
-  font-weight: 500;
+    color: #17458f;
+    text-decoration: underline;
+    font-weight: 500;
 }
 
 .news-item a:hover {
-  text-decoration: none;
+    text-decoration: none;
+}
+
+.section {
+    background-color: #657f9938;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.center{
+    text-align: center;
+}
+
+.section .section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
 }
