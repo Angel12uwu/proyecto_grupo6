@@ -7,6 +7,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="styles/general.css">
+	<link rel="stylesheet" href="styles/ayuda_style.css">
 	<script src="scripts/hamburger.js"></script>
 	<title>Cómo Ayudar</title>
 </head>
@@ -75,24 +76,63 @@
 				<h3 class="form-title">Ofrecete Como Voluntario</h3>
 				<p style="margin-bottom: 20px;">Completa el siguiente formulario para uniirte a nuestro equipo de
 					voluntarios. ¡Esperamos tu participación!</p>
+				
+				<h4>Información Personal</h4>
 				<div class="form-group">
 					<label class="form-label" for="vol-name">Nombre Completo:</label>
 					<input class="form-control" id="vol-name" name="name" type="text"
 						placeholder="Tu nombre completo..." required />
 				</div>
 				<div class="form-group">
+					<label class="form-label" for="vol-id">Numero de Identidad:</label>
+					<input class="form-control" id="vol-id" name="id" type="text"
+						placeholder="Tu número de identidad..." required />
+				</div>
+				<div class="form-group">
+					<label class="form-label" for="vol-fecha">Fecha de Nacimiento:</label>
+					<input class="form-control" id="vol-fecha" name="fecha" type="date"
+						placeholder="Tu fecha de nacimiento..." required />
+				</div>
+				<div class="form-group">
+					<label class="form-label" for="vol-phone">Teléfono:</label>
+					<input class="form-control" id="vol-phone" name="phone" type="tel" placeholder="Tu teléfono..." />
+				</div>
+				<div class="form-group">
 					<label class="form-label" for="vol-email">Correo Electrónico:</label>
 					<input class="form-control" id="vol-email" name="email" type="email" placeholder="tu@correo.com"
 						required />
 				</div>
+
+				<h4>Formación Académica</h4>
 				<div class="form-group">
-					<label class="form-label" for="vol-phone">Teléfono (opcional):</label>
-					<input class="form-control" id="vol-phone" name="phone" type="tel" placeholder="Tu teléfono..." />
+					<label class="form-label" for="vol-primaria">Educación Primaria:</label>
+					<input class="form-control" id="vol-primaria" name="primaria" type="text" placeholder="Tu educación primaria..."
+						required />
 				</div>
 				<div class="form-group">
-					<label class="form-label" for="vol-message">Cuéntanos por qué quieres ser voluntario:</label>
-					<textarea class="form-control" id="vol-message" name="message" placeholder="Tu mensaje..."
-						required></textarea>
+					<label class="form-label" for="vol-secundaria">Educación Secundaria:</label>
+					<input class="form-control" id="vol-secundaria" name="secundaria" type="text" placeholder="Tu educación secundaria..."
+						required />
+				</div>
+
+				<h4>Información Complementaria</h4>
+				<div class="form-group">
+					<label class="form-label" for="vol-idiomas">¿Qué Idiomas Manejas?</label>
+					<input class="form-control" id="vol-idiomas" name="idiomas" type="text" placeholder="Idiomas que manejas..."/>
+				</div>
+				<div class="form-group">
+					<label class="form-label" for="vol-voluntariados">Voluntariados (Indica si es tu primer voluntariado)</label>
+					<input class="form-control" id="vol-voluntariados" name="voluntariados" type="text" placeholder="Tu experiencia en voluntariados..."
+						required />
+				</div>
+				<div class="form-group">
+					<label class="form-label" for="vol-cursos">Cursos</label>
+					<input class="form-control" id="vol-cursos" name="cursos" type="text" placeholder="Tu experiencia en cursos..."/>
+				</div>
+				<div class="form-group">
+					<label class="form-label" for="vol-acerca-empresa">¿Qué Sabes Acerca de Interact?</label>
+					<input class="form-control" id="vol-acerca-empresa" name="acerca_empresa" type="text" placeholder="Tu experiencia en voluntariados..."
+						required />
 				</div>
 				<button class="btn" type="submit">Enviar Solicitud</button>
 			</form>

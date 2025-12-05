@@ -1,0 +1,122 @@
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-grid {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 2rem 1rem;
+  justify-content: center;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+
+.gallery-grid::-webkit-scrollbar {
+  display: none;
+}
+.gallery-grid {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.gallery-item {
+  flex: 0 0 280px;
+  scroll-snap-align: center;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  opacity: 0.45;
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.gallery-item.active {
+  transform: scale(1.05);
+  opacity: 1;
+  z-index: 2;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  display: block;
+}
+
+.gallery-item figcaption {
+  text-align: center;
+  margin-top: .5rem;
+  color: #222;
+  font-weight: 600;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 5;
+}
+
+#prev {
+  left: 8px;
+}
+
+#next {
+  right: 8px;
+}
+
+.carousel-btn:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.carousel-dots {
+  display: flex;
+  gap: .5rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.carousel-dots button {
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.carousel-dots button.active {
+  background: #00adbb;
+}
+
+@media (min-width: 768px) {
+  .gallery-item { flex: 0 0 320px; }
+  .gallery-img { height: 420px; }
+}
+
+@media (min-width: 1200px) {
+  .gallery-item { flex: 0 0 360px; }
+  .gallery-img { height: 480px; }
+}
