@@ -90,7 +90,7 @@ body {
 
 .nav-logo .site-title {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.4rem;
   color: #fff;
 }
 
@@ -209,6 +209,12 @@ body {
   .nav-overlay {
     display: none;
   }
+
+  .nav-logo .site-title {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #fff;
+}
 
   .nav-list {
     display: flex;
