@@ -7,6 +7,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="styles/general.css">
+	<link rel="stylesheet" href="styles/galeria_styles.css">
 	<script src="scripts/hamburger.js"></script>
 	<title>Galería</title>
 </head>
@@ -58,7 +59,11 @@
 			</p>
 		</section>
 
-		<section class="section gallery-grid">
+		<section class="section gallery-carousel">
+			<div class="carousel-wrapper">
+				<button id="prev" class="carousel-btn" aria-label="Anterior">◀</button>
+				<div class="gallery-grid">
+
 			<figure class="gallery-item">
 				<img class="gallery-img" src="https://picsum.photos/seed/interact1/300/400"
 					alt="Actividad Comunitaria 1" />
@@ -88,6 +93,11 @@
 					alt="Celebración de Logros" />
 				<figcaption>Image6</figcaption>
 			</figure>
+
+				</div>
+				<button id="next" class="carousel-btn" aria-label="Siguiente">▶</button>
+			</div>
+			<div class="carousel-dots" role="tablist" aria-label="Paginación del carrusel"></div>
 		</section>
 	</main>
 

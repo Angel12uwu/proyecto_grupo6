@@ -1,0 +1,100 @@
+.help-hero {
+  text-align: center;
+  background-color: #657f991a;
+  padding: 3rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+}
+.help-hero .section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #17458f; /* coherente con header */
+  margin-bottom: 1rem;
+}
+.help-hero p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.ways {
+  margin-bottom: 3rem;
+}
+.ways .section-subtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #17458f;
+}
+.ways ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+.ways li {
+  background-color: #657f991a;
+  border-left: 4px solid #f7a81b;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  line-height: 1.6;
+}
+.form-volunteer {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.form-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #17458f;
+}
+.form-volunteer h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.form-label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+.form-control {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.form-control:focus {
+  border-color: #17458f;
+  box-shadow: 0 0 0 3px rgba(23,69,143,0.2);
+  outline: none;
+}
+.btn {
+  background: #17458f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+  margin-top: 1rem;
+}
+.btn:hover {
+  background: #968b83;
+}
+

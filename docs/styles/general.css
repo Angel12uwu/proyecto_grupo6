@@ -14,6 +14,16 @@ body {
   min-height: 100vh;
 }
 
+a {
+  color: #17458f;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 .site-main {
   padding: 1rem;
   margin: 0 auto;
@@ -211,10 +221,10 @@ body {
   }
 
   .nav-logo .site-title {
-  font-weight: 700;
-  font-size: 2rem;
-  color: #fff;
-}
+    font-weight: 700;
+    font-size: 2rem;
+    color: #fff;
+  }
 
   .nav-list {
     display: flex;
@@ -232,6 +242,3 @@ body {
     display: none;
   }
 }
-
-
-

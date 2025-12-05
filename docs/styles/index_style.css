@@ -20,6 +20,7 @@
 }
 
 .btn:hover {
+    transition: 0.2s ease;
     background-color: #968b83;
 }
 
@@ -31,16 +32,6 @@
 
 .news-item {
     margin-bottom: 0.75rem;
-}
-
-.news-item a {
-    color: #17458f;
-    text-decoration: underline;
-    font-weight: 500;
-}
-
-.news-item a:hover {
-    text-decoration: none;
 }
 
 .section {
