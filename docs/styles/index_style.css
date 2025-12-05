@@ -1,0 +1,45 @@
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: #0077cc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 1rem;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background-color: #968b83;
+}
+
+.section.news {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news-item {
+  margin-bottom: 0.75rem;
+}
+
+.news-item a {
+  color: #0077cc;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.news-item a:hover {
+  text-decoration: none;
+}
