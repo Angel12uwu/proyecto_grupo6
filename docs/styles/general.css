@@ -242,10 +242,3 @@ a:hover {
     display: none;
   }
 }
-
-.btn:hover {
-    transition: 0.2s ease;
-    padding: 0.75rem 1rem; 
-    background-color: #102f61;
-    border-radius: 10px;
-}
