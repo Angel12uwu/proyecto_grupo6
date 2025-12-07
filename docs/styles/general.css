@@ -12,16 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-a {
-  color: #17458f;
-  text-decoration: underline;
-  font-weight: 500;
-}
-
-a:hover {
-  text-decoration: none;
+   padding-top: 70px;
 }
 
 .site-main {
@@ -42,16 +33,42 @@ a:hover {
   margin-bottom: 1rem;
 }
 
+.hero p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+
+
+/*ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}*/
 
 .site-header {
   display: flex;
   flex-direction: row;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 0.5rem;
-  z-index: 20;
   background: #17458f;
   color: #fff;
+  z-index: 9999;
 }
+
+
 
 .nav-toggle {
   display: none;
@@ -100,8 +117,8 @@ a:hover {
 
 .nav-logo .site-title {
   font-weight: 700;
-  font-size: 1.4rem;
-  color: #fff;
+  font-size: 1.15rem;
+  color: inherit;
 }
 
 .nav-list {
@@ -121,6 +138,11 @@ a:hover {
   color: #fff;
   text-decoration: none;
   padding: 6px 8px;
+}
+
+.nav-list a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
 }
 
 .nav-overlay {
@@ -168,6 +190,12 @@ a:hover {
   padding: 1.25rem 1.5rem;
   display: block;
   font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-list-overlay a:hover {
+  background-color: #f0f0f0; 
+  color: #17458f;            
 }
 
 .close-panel {
@@ -203,10 +231,12 @@ a:hover {
 }
 
 .site-footer {
-  background: #54565a;
+  background: #222;
   color: #fff;
   text-align: center;
-  padding: 10px;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  border-top: 4px solid #17458f;
   margin-top: auto;
 }
 
@@ -218,12 +248,6 @@ a:hover {
 
   .nav-overlay {
     display: none;
-  }
-
-  .nav-logo .site-title {
-    font-weight: 700;
-    font-size: 2rem;
-    color: #fff;
   }
 
   .nav-list {
