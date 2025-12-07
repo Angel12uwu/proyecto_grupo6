@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // close overlay when clicking a link inside it
+
   document.querySelectorAll('.nav-list-overlay a').forEach(a => {
     a.addEventListener('click', () => {
       const cb = document.querySelector('.nav-toggle');
@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // close when clicking the overlay background
+
   const overlay = document.querySelector('.nav-overlay');
   if (overlay) {
     overlay.addEventListener('click', (e) => {
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
-  // close button
+
   document.querySelectorAll('.close-panel').forEach(btn => btn.addEventListener('click', () => {
     const cb = document.querySelector('.nav-toggle'); if (cb) cb.checked = false;
   }));

@@ -98,3 +98,15 @@
   background: #968b83;
 }
 
+.error-message {
+    color: red; 
+    font-size: 0.9em;
+    margin-top: 5px;
+    padding-left: 2px;
+    display: none;
+}
+
+
+.error-message.active {
+    display: block !important; 
+}
