@@ -1,6 +1,6 @@
 .about-hero {
     text-align: center;
-    background-color: #657f9938;
+    background-color: #657f991a;
     padding: 3rem 2rem;
     border-radius: 8px;
     margin-bottom: 3rem;
@@ -11,7 +11,6 @@
     font-weight: 700;
     margin-bottom: 1rem;
     color: #17458f;
-    /* coherente con tu header */
 }
 
 .about-hero p {
@@ -22,9 +21,9 @@
 }
 
 .history {
-    background: #657f9938;
+    background: #657f991a;
     padding: 2rem;
-    border-left: 4px solid #17458f;
+    border-left: 4px solid #f7a81b;
     border-radius: 6px;
     margin-bottom: 3rem;
 }
@@ -106,5 +105,4 @@
 
 .team-member img:hover {
     transform: scale(1.05);
-    /* efecto sutil al pasar el mouse */
 }
