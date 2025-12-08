@@ -17,7 +17,7 @@
 .carrusel-item.left { transform: translateZ(20px) rotateY(18deg) translateX(-8px) scale(0.94); opacity: 0.75; z-index: 20; filter: brightness(0.95) saturate(0.98); }
 .carrusel-item.right { transform: translateZ(20px) rotateY(-18deg) translateX(8px) scale(0.94); opacity: 0.75; z-index: 20; filter: brightness(0.95) saturate(0.98); }
 
-/* optional stronger center look */
+
 .carrusel-item.center-strong img { box-shadow: 0 12px 30px rgba(0,0,0,0.18); }
 
 .gallery-grid {

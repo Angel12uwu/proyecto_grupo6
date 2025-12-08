@@ -38,11 +38,8 @@ class Carrusel {
             return;
         }
 
-
-        // cloneCount: show two items visually at ends to make wrap seamless
         this.cloneCount = Math.min(2, this.slidesCount);
 
-        // prepend last N clones (in order) and append first N clones
         for (let i = this.cloneCount - 1; i >= 0; i--) {
             const idx = this.slidesCount - this.cloneCount + i;
             const clone = this.originalItems[idx].cloneNode(true);
@@ -57,10 +54,8 @@ class Carrusel {
 
         this.items = [...this.track.querySelectorAll(".carrusel-item")];
 
-        // start at the first original (offset by cloneCount)
         this.currentItem = this.cloneCount;
 
-        // compute slide distance in pixels using the first two original items inside items
         if (this.items.length > this.cloneCount + 1) {
             const first = this.items[this.currentItem];
             const second = this.items[this.currentItem + 1];
@@ -82,10 +77,8 @@ class Carrusel {
                 this.track.style.transition = 'none';
 
                 if (this.currentItem < this.cloneCount) {
-                    // jumped into prepend clones -> move to corresponding original
                     this.currentItem = this.currentItem + this.slidesCount;
                 } else if (this.currentItem >= this.cloneCount + this.slidesCount) {
-                    // jumped into appended clones -> move to corresponding original
                     this.currentItem = this.currentItem - this.slidesCount;
                 }
 
@@ -97,7 +90,6 @@ class Carrusel {
                     this.track.style.transition = savedTransition || 'transform 0.7s ease-in-out';
                 }, 20);
             }
-            // update active classes after any transition
             this.updateActive();
         });
     }
@@ -106,9 +98,7 @@ class Carrusel {
         console.log("Carrusel Inicializado");
         console.log("items:", this.items);
         this.generateUX();
-        // initial active marking
         this.updateActive();
-        // recalculate slide distance on resize
         window.addEventListener('resize', ()=>{
             if (this.items.length > this.cloneCount + 1) {
                 const first = this.items[this.currentItem];
@@ -120,7 +110,6 @@ class Carrusel {
             // reposition to current
             this.track.style.transition = 'none';
             this.track.style.transform = `translateX(-${this.currentItem * this.slideDistance}px)`;
-            // force reflow then restore
             this.track.offsetWidth;
             this.track.style.transition = 'transform 0.7s ease-in-out';
         });
@@ -130,12 +119,10 @@ class Carrusel {
     updateActive(){
         if (!this.originalItems || !this.originalItems.length) return;
 
-        // clear classes on both originals and clones to be safe
         this.items.forEach(it=> it.classList.remove('active','left','right','center-strong'));
         this.originalItems.forEach(it=> it.classList.remove('active','left','right','center-strong'));
 
-        // Map currentItem (which indexes into this.items including clones) to a 0-based real index for originalItems
-        const realCenter = ((this.currentItem - this.cloneCount) % this.slidesCount + this.slidesCount) % this.slidesCount; // 0..slidesCount-1
+        const realCenter = ((this.currentItem - this.cloneCount) % this.slidesCount + this.slidesCount) % this.slidesCount;
 
         const centerEl = this.originalItems[realCenter];
         if (centerEl) centerEl.classList.add('active','center-strong');
@@ -145,7 +132,6 @@ class Carrusel {
         if (this.originalItems[leftReal]) this.originalItems[leftReal].classList.add('left');
         if (this.originalItems[rightReal]) this.originalItems[rightReal].classList.add('right');
 
-        // Also mark the currently visible items in `this.items` (these may be clones)
         if (this.items && this.items.length) {
             const dispCenter = (this.currentItem + this.items.length) % this.items.length;
             const dispLeft = (dispCenter - 1 + this.items.length) % this.items.length;
@@ -154,15 +140,13 @@ class Carrusel {
             if (this.items[dispLeft]) this.items[dispLeft].classList.add('left');
             if (this.items[dispRight]) this.items[dispRight].classList.add('right');
         }
-        // update dots if present
         if (this.dotsContainer) {
-            const dotIndex = realCenter; // 0-based
+            const dotIndex = realCenter;
             Array.from(this.dotsContainer.children).forEach((b, idx)=> b.classList.toggle('active', idx === dotIndex));
         }
     }
 
     generateUX(){
-        // If page already provides prev/next buttons (ids #prev and #next), use them
         const prevBtn = document.getElementById('prev');
         const nextBtn = document.getElementById('next');
 
@@ -187,7 +171,6 @@ class Carrusel {
             this.contendor.appendChild(this.leftButton);
         }
 
-        // generate pagination dots if container exists
         const dotsContainer = document.querySelector('.carousel-dots');
         if (dotsContainer) {
             dotsContainer.innerHTML = '';
@@ -195,8 +178,7 @@ class Carrusel {
                 const btn = document.createElement('button');
                 btn.addEventListener('click', ()=>{
                     clearTimeout(this.timerId);
-                    // target index shifts by cloneCount because of clones
-                        this.currentItem = i + this.cloneCount;
+                    this.currentItem = i + this.cloneCount;
                     this.moveTo(this.currentItem);
                     this.tick();
                 });
@@ -233,12 +215,10 @@ class Carrusel {
     moveTo(index){
         this.track.style.transition = 'transform 0.7s ease-in-out';
         this.track.style.transform = `translateX(-${index * this.slideDistance}px)`;
-        // update dots
         if (this.dotsContainer) {
-            const activeIndex = ((index - this.cloneCount) + this.slidesCount) % this.slidesCount; // 0-based
+            const activeIndex = ((index - this.cloneCount) + this.slidesCount) % this.slidesCount;
             Array.from(this.dotsContainer.children).forEach((b, idx)=> b.classList.toggle('active', idx === activeIndex));
         }
-        // update active visual state (will be corrected on transitionend if clone swap occurs)
         this.updateActive();
     }
 }
