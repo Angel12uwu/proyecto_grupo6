@@ -1,0 +1,252 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.contact-hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  color: #fff;
+
+  background-image: url("https://picsum.photos/1920/1080?blur=2");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+}
+
+.contact-hero,
+.container .contact-hero,
+.wrap .contact-hero,
+.site-content .contact-hero {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+}
+
+.contact-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(1px);
+  z-index: 1;
+}
+
+.contact-hero h1,
+.contact-hero p, 
+.hero-btn {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-hero h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+.contact-hero p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.hero-btn {
+  display: inline-block;
+  background-color: #17458f;
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  border-radius: 40px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color .2s ease, transform .2s ease;
+}
+
+.hero-btn:hover {
+  background-color: #0f3268;
+  transform: translateY(-3px);
+}
+
+.contact-info {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 10px;
+  margin: 3rem auto;
+  max-width: 1100px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border-left: 6px solid #17458f;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.contact-info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+/* Títulos */
+.section-subtitle {
+  color: #17458f;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+/* Items de contacto estilo donaciones */
+.contact-item {
+  background-color: #657f991a;
+  border-left: 4px solid #f7a81b;
+  padding: 0.9rem 1.2rem;
+  margin: 0 auto 1rem;
+  border-radius: 6px;
+  line-height: 1.6;
+  max-width: 600px;
+  text-align: left;
+}
+
+/* ===============================
+   FORMULARIO ESTILO DONACIONES
+================================ */
+.contact-form {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 2rem;
+  max-width: 700px;
+  margin: 0 auto 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  border-left: 6px solid #17458f;
+}
+
+/* Título del form */
+.contact-form .section-subtitle {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+/* Grupos */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.form-label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+/* Inputs */
+.form-control {
+  padding: 0.7rem 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus {
+  border-color: #17458f;
+  box-shadow: 0 0 0 3px rgba(23,69,143,0.2);
+  outline: none;
+}
+
+textarea.form-control {
+  min-height: 130px;
+  resize: vertical;
+}
+
+/* Botón */
+.btn {
+  background: #17458f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.9rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background: #0f3268;
+  transform: scale(1.05);
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 900px) {
+  .contact-hero {
+    height: 350px;
+    padding: 2rem;
+  }
+
+  .contact-hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .contact-hero p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-hero {
+    height: 260px;
+  }
+
+  .contact-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .contact-hero p {
+    font-size: 0.95rem;
+    max-width: 90%;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+  }
+}
+
+/* ===============================
+   ELIMINAR LINEAS BLANCAS ARRIBA
+================================ */
+header {
+  margin-bottom: 0 !important;
+}
+
+.site-main {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.contact-hero {
+  margin-top: -1px !important;
+}
