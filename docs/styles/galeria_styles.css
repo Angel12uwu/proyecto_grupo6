@@ -9,6 +9,17 @@
   justify-content: center;
 }
 
+
+.carrusel { width: 100%; overflow: hidden; perspective: 1200px; }
+.carrusel-track { display: flex; gap: 1rem; padding: 2rem 1rem; align-items: center; transition: transform 0.7s ease-in-out; transform-style: preserve-3d; }
+.carrusel-item { flex: 0 0 280px; scroll-snap-align: center; transition: transform 0.6s cubic-bezier(.2,.9,.2,1), opacity 0.4s ease, filter 0.4s ease; opacity: 0.5; transform: translateZ(0) rotateY(0deg) scale(0.92); transform-origin: center center; }
+.carrusel-item.active { transform: translateZ(60px) translateY(-14px) scale(1.08) rotateY(0deg); opacity: 1; z-index: 30; filter: brightness(1.05) saturate(1.05); }
+.carrusel-item.left { transform: translateZ(20px) rotateY(18deg) translateX(-8px) scale(0.94); opacity: 0.75; z-index: 20; filter: brightness(0.95) saturate(0.98); }
+.carrusel-item.right { transform: translateZ(20px) rotateY(-18deg) translateX(8px) scale(0.94); opacity: 0.75; z-index: 20; filter: brightness(0.95) saturate(0.98); }
+
+
+.carrusel-item.center-strong img { box-shadow: 0 12px 30px rgba(0,0,0,0.18); }
+
 .gallery-grid {
   display: flex;
   gap: 1rem;
