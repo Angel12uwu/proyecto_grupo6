@@ -1,6 +1,4 @@
-/* ===============================
-   FAQ – ESTILOS GENERALES
-================================ */
+
 
 body {
   font-family: "Roboto", sans-serif;
@@ -10,9 +8,6 @@ body {
   padding: 0;
 }
 
-/* ===============================
-   ESTRUCTURA GENERAL
-================================ */
 
 .site-main {
   width: 100%;
@@ -25,9 +20,6 @@ body {
   margin-bottom: 3rem;
 }
 
-/* ===============================
-   HERO FAQ
-================================ */
 
 .faq-hero {
   text-align: center;
@@ -52,10 +44,6 @@ body {
   color: #555;
 }
 
-/* ===============================
-   LISTA DE PREGUNTAS
-================================ */
-
 .faq-list {
   max-width: 900px;
   margin: 0 auto;
@@ -63,8 +51,6 @@ body {
   flex-direction: column;
   gap: 1.5rem;
 }
-
-/* Cada item */
 
 .faq-item {
   background: #ffffff;
@@ -91,10 +77,6 @@ body {
   border-radius: 3px;
 }
 
-/* ===============================
-   PREGUNTA
-================================ */
-
 .faq-question {
   font-size: 1.2rem;
   font-weight: 700;
@@ -102,8 +84,6 @@ body {
   color: #111;
   position: relative;
 }
-
-/* Línea decorativa */
 
 .faq-question::before {
   content: "";
@@ -116,21 +96,12 @@ body {
   border-radius: 10px;
 }
 
-/* ===============================
-   RESPUESTA
-================================ */
-
 .faq-answer {
   font-size: 1rem;
   line-height: 1.7;
   color: #555;
   margin: 0;
 }
-
-
-/* ===============================
-   RESPONSIVE
-================================ */
 
 @media (max-width: 768px) {
   .section-title {

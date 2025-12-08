@@ -1,6 +1,4 @@
-/* ===============================
-   RESET BÁSICO
-================================ */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,9 +12,6 @@ html, body {
   background: #fff;
 }
 
-/* ===============================
-   CONTAINER GENERAL
-================================ */
 .site-main {
   max-width: 1100px;
   margin: 0 auto;
@@ -25,9 +20,6 @@ html, body {
   line-height: 1.6;
 }
 
-/* ===============================
-   HERO DONACIONES (ARREGLADO)
-================================ */
 .donations-hero {
   position: relative;
   width: 100vw;
@@ -51,7 +43,6 @@ html, body {
   overflow: hidden;
 }
 
-/* Forzar ancho completo aunque esté dentro de containers */
 .donations-hero,
 .container .donations-hero,
 .wrap .donations-hero,
@@ -62,12 +53,10 @@ html, body {
   margin-right: calc(50% - 50vw) !important;
 }
 
-/* Asegurar que si usa .section no tape el fondo */
 .donations-hero.section {
   background: transparent !important;
 }
 
-/* Overlay oscuro */
 .donations-hero::before {
   content: "";
   position: absolute;
@@ -76,7 +65,6 @@ html, body {
   z-index: 1;
 }
 
-/* Textos sobre el overlay */
 .donations-hero .section-title,
 .donations-hero p,
 .donations-hero .hero-btn {
@@ -85,7 +73,6 @@ html, body {
   color: #fff !important;
 }
 
-/* Texto principal */
 .donations-hero .section-title {
   font-size: 2.8rem;
   font-weight: 700;
@@ -93,7 +80,6 @@ html, body {
   max-width: 900px;
 }
 
-/* Texto secundario */
 .donations-hero p {
   max-width: 700px;
   margin: 0 auto 1.5rem;
@@ -101,7 +87,6 @@ html, body {
   line-height: 1.6;
 }
 
-/* Botón del hero */
 .hero-btn {
   display: inline-block;
   background-color: #17458f;
@@ -121,9 +106,6 @@ html, body {
   transform: translateY(-3px);
 }
 
-/* ===============================
-   SECCIONES NORMALES
-================================ */
 .section {
   background: #fff;
   padding: 2.5rem;
@@ -151,9 +133,6 @@ html, body {
   font-size: 1.3rem;
 }
 
-/* ===============================
-   LISTAS
-================================ */
 .donation-info ul {
   list-style: none;
   padding: 0;
@@ -169,9 +148,6 @@ html, body {
   line-height: 1.6;
 }
 
-/* ===============================
-   FORMULARIO
-================================ */
 .form-donation {
   background: #fff;
   border-radius: 10px;
@@ -216,9 +192,6 @@ html, body {
   outline: none;
 }
 
-/* ===============================
-   BOTONES FORM
-================================ */
 .btn {
   background: #17458f;
   color: #fff;
@@ -237,9 +210,6 @@ html, body {
   transform: scale(1.05);
 }
 
-/* ===============================
-   RESPONSIVE
-================================ */
 @media (max-width: 900px) {
   .donations-hero {
     height: 350px;

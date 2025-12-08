@@ -104,7 +104,6 @@ html, body {
   box-shadow: 0 6px 20px rgba(0,0,0,0.12);
 }
 
-/* Títulos */
 .section-subtitle {
   color: #17458f;
   margin-bottom: 1rem;
@@ -112,7 +111,6 @@ html, body {
   font-size: 1.6rem;
 }
 
-/* Items de contacto estilo donaciones */
 .contact-item {
   background-color: #657f991a;
   border-left: 4px solid #f7a81b;
@@ -124,9 +122,6 @@ html, body {
   text-align: left;
 }
 
-/* ===============================
-   FORMULARIO ESTILO DONACIONES
-================================ */
 .contact-form {
   background: #fff;
   border-radius: 10px;
@@ -140,26 +135,22 @@ html, body {
   border-left: 6px solid #17458f;
 }
 
-/* Título del form */
 .contact-form .section-subtitle {
   text-align: center;
   font-size: 1.6rem;
 }
 
-/* Grupos */
 .form-group {
   display: flex;
   flex-direction: column;
 }
 
-/* Labels */
 .form-label {
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: #444;
 }
 
-/* Inputs */
 .form-control {
   padding: 0.7rem 0.9rem;
   border: 1px solid #ccc;
@@ -179,7 +170,6 @@ textarea.form-control {
   resize: vertical;
 }
 
-/* Botón */
 .btn {
   background: #17458f;
   color: #fff;
@@ -198,9 +188,6 @@ textarea.form-control {
   transform: scale(1.05);
 }
 
-/* ===============================
-   RESPONSIVE
-================================ */
 @media (max-width: 900px) {
   .contact-hero {
     height: 350px;
@@ -235,9 +222,6 @@ textarea.form-control {
   }
 }
 
-/* ===============================
-   ELIMINAR LINEAS BLANCAS ARRIBA
-================================ */
 header {
   margin-bottom: 0 !important;
 }
