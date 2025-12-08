@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="styles/general.css">
 	<link rel="stylesheet" href="styles/donations_style.css">
 	<script src="scripts/hamburger.js"></script>
+	<script src="scripts/donations.js"></script>
 	<title>Donaciones</title>
 </head>
 
@@ -75,29 +76,33 @@
 		</section>
 
 		<section class="section donation-form" id="donation-form">
-			<h2 class="section-subtitle">Formulario de donación</h2>
-			<form class="form-donation" action="#" method="post">
-				<div class="form-group">
-					<label class="form-label" for="donor-name">Nombre:</label>
-					<input class="form-control" id="donor-name" name="name" type="text" placeholder="Tu nombre" />
-				</div>
-				<div class="form-group">
-					<label class="form-label" for="donor-email">Correo:</label>
-					<input class="form-control" id="donor-email" name="email" type="email"
-						placeholder="tu@correo.com" />
-				</div>
-				<div class="form-group">
-					<label class="form-label" for="donation-amount">Monto:</label>
-					<input class="form-control" id="donation-amount" name="amount" type="number" placeholder="Cantidad"
-						min="1" />
-				</div>
-				<div class="form-group">
-					<label class="form-label" for="donation-message">Mensaje (opcional)</label>
-					<textarea class="form-control" id="donation-message" name="message"
-						placeholder="Mensaje para la organización"></textarea>
-				</div>
-				<button class="btn" type="submit">Donar</button>
-			</form>
+    		<h2 class="section-subtitle">Formulario de donación</h2>
+    		<form class="form-donation" action="#" method="post">
+        <div class="form-group">
+            <label class="form-label" for="donor-name">Nombre:</label>
+            <input class="form-control" id="donor-name" name="name" type="text" placeholder="Tu nombre" />
+            <p class="error-message" id="nameError"></p>
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="donor-email">Correo:</label>
+            <input class="form-control" id="donor-email" name="email" type="email"
+                placeholder="tu@correo.com" />
+            <p class="error-message" id="emailError"></p>
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="donation-amount">Monto:</label>
+            <input class="form-control" id="donation-amount" name="amount" type="number" placeholder="Cantidad"
+                min="1" />
+            <p class="error-message" id="amountError"></p>
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="donation-message">Mensaje (opcional)</label>
+            <textarea class="form-control" id="donation-message" name="message"
+                placeholder="Mensaje para la organización"></textarea>
+            <p class="error-message" id="messageError"></p>
+        </div>
+        <button class="btn" type="submit">Donar</button>
+    		</form>
 		</section>
 	</main>
 
