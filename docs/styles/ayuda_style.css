@@ -1,3 +1,19 @@
+.site-main,
+.help-hero,
+.section,
+.form-volunteer,
+.form-group,
+.form-control,
+.btn {
+  box-sizing: border-box;
+}
+
+.site-main {
+  padding: 1.5rem;
+  color: #141414;
+  line-height: 1.6;
+}
+
 .help-hero {
   text-align: center;
   background-color: #657f991a;
@@ -46,13 +62,43 @@
   line-height: 1.6;
 }
 
+.section {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border-left: 6px solid #17458f;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.section-title,
+.section-subtitle {
+  color: #17458f;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+}
+
 .form-volunteer {
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   padding: 2rem;
   max-width: 700px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
 .form-title {
@@ -62,18 +108,9 @@
   color: #17458f;
 }
 
-.form-volunteer h4 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  color: #333;
-}
-
 .form-group {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
 }
 
 .form-label {
@@ -92,7 +129,7 @@
 
 .form-control:focus {
   border-color: #17458f;
-  box-shadow: 0 0 0 3px rgba(23, 69, 143, 0.2);
+  box-shadow: 0 0 0 3px rgba(23,69,143,0.2);
   outline: none;
 }
 
@@ -105,25 +142,71 @@
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: 0.2s ease;
+  transition: background-color 0.2s ease, transform 0.2s ease;
   margin-top: 1rem;
-  transition: background-color .2s ease, transform .2s ease;
 }
 
 .btn:hover {
-  background-color: #0f3268;
-    transform: translateY(-3px);
+  background: #0f3268;
+  transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+  .help-hero {
+    padding: 2rem 1.5rem;
+  }
+
+  .help-hero .section-title {
+    font-size: 2.1rem;
+  }
+
+  .help-hero p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .help-hero {
+    padding: 1.5rem;
+  }
+
+  .help-hero .section-title {
+    font-size: 1.8rem;
+  }
+
+  .help-hero p {
+    font-size: 0.95rem;
+    max-width: 90%;
+  }
+
+  .form-volunteer {
+    padding: 1.5rem;
+  }
+}
+
+header {
+  margin-bottom: 0 !important;
+}
+
+.site-main {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
 .error-message {
-  color: red;
-  font-size: 0.9em;
-  margin-top: 5px;
-  padding-left: 2px;
-  display: none;
+    display: none; 
+    font-size: 0.85em; 
+    margin-top: 5px;
+    padding-left: 5px;
 }
 
-
 .error-message.active {
-  display: block !important;
+    display: block; 
+    color: #ff0000; 
+    font-weight: bold;
+}
+
+.form-group .form-control.error {
+    border-color: #ff0000;
+    box-shadow: 0 0 0 0.1rem rgba(255, 0, 0, 0.25);
 }

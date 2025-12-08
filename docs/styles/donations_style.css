@@ -1,21 +1,15 @@
-
-* {
+.site-main,
+.donations-hero,
+.section,
+.form-donation,
+.form-group,
+.form-control,
+.btn {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html, body {
-  width: 100%;
-  overflow-x: hidden;
-  font-family: "Poppins", sans-serif;
-  background: #fff;
 }
 
 .site-main {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 2rem;
+  padding: 1.5rem;
   color: #141414;
   line-height: 1.6;
 }
@@ -23,9 +17,11 @@ html, body {
 .donations-hero {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   margin: 0;
-  padding: 0;
+  padding: 3rem 1rem;
+  padding-top: 6rem;
 
   display: flex;
   flex-direction: column;
@@ -35,10 +31,11 @@ html, body {
   text-align: center;
   color: #fff;
 
-  background-image: url("../img/3.jpeg");
+  background-image: url("../img/3.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 
   overflow: hidden;
 }
@@ -55,10 +52,8 @@ html, body {
 
 .donations-hero.section {
   background: transparent !important;
-}
-
-.donations-hero.section {
-  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
 }
 
 .donations-hero::before {
@@ -78,16 +73,16 @@ html, body {
 }
 
 .donations-hero .section-title {
-  font-size: 2.8rem;
+  font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 0.8rem;
-  max-width: 900px;
+  max-width: 100%;
 }
 
 .donations-hero p {
-  max-width: 700px;
+  max-width: 90%;
   margin: 0 auto 1.5rem;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   line-height: 1.6;
 }
 
@@ -95,9 +90,9 @@ html, body {
   display: inline-block;
   background-color: #17458f;
   color: #fff !important;
-  padding: 0.9rem 2rem;
+  padding: 0.8rem 1.5rem;
   border-radius: 40px;
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   font-weight: 600;
   text-decoration: none;
   transition: background-color .25s ease, transform .2s ease;
@@ -112,7 +107,7 @@ html, body {
 
 .section {
   background: #fff;
-  padding: 2.5rem;
+  padding: 2rem;
   border-radius: 10px;
   margin-bottom: 3rem;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -132,9 +127,13 @@ html, body {
   font-weight: 700;
 }
 
+.section-title {
+  font-size: 1.5rem;
+}
+
 .section-subtitle {
   margin-top: 1.5rem;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .donation-info ul {
@@ -146,26 +145,27 @@ html, body {
 .donation-info li {
   background-color: #657f991a;
   border-left: 4px solid #f7a81b;
-  padding: 0.9rem 1.2rem;
+  padding: 0.9rem 1rem;
   margin-bottom: 1rem;
   border-radius: 6px;
   line-height: 1.6;
+  font-size: 0.95rem;
 }
 
 .form-donation {
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  padding: 2rem;
-  max-width: 700px;
-  margin: 0 auto;
+  padding: 1.5rem;
+  max-width: 100%;
+  margin: 0;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
 }
 
 .form-title {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 1rem;
   color: #17458f;
@@ -180,13 +180,14 @@ html, body {
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: #444;
+  font-size: 0.95rem;
 }
 
 .form-control {
   padding: 0.6rem 0.8rem;
   border: 1px solid #ccc;
   border-radius: 6px;
-  font-size: 1rem;
+  font-size: 0.95rem;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -202,7 +203,7 @@ html, body {
   border: none;
   border-radius: 6px;
   padding: 0.8rem 1.2rem;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.2s ease, transform 0.2s ease;
@@ -214,38 +215,22 @@ html, body {
   transform: scale(1.05);
 }
 
-@media (max-width: 900px) {
-  .donations-hero {
-    height: 350px;
-    padding: 2rem 1.5rem;
-  }
-
-  .donations-hero .section-title {
-    font-size: 2.1rem;
-  }
-
-  .donations-hero p {
-    font-size: 1rem;
-  }
+.error-message {
+  display: none;
+  font-size: 0.85em;
+  margin-top: 5px;
+  padding-left: 5px;
 }
 
-@media (max-width: 600px) {
-  .donations-hero {
-    height: 260px;
-  }
+.error-message.active {
+  display: block;
+  color: #ff0000;
+  font-weight: bold;
+}
 
-  .donations-hero .section-title {
-    font-size: 1.8rem;
-  }
-
-  .donations-hero p {
-    font-size: 0.95rem;
-    max-width: 90%;
-  }
-
-  .form-donation {
-    padding: 1.5rem;
-  }
+.form-group .form-control.error {
+  border-color: #ff0000;
+  box-shadow: 0 0 0 0.1rem rgba(255, 0, 0, 0.25);
 }
 
 header {
@@ -261,20 +246,113 @@ header {
   margin-top: -1px !important;
 }
 
-.error-message {
-    display: none; 
-    font-size: 0.85em; 
-    margin-top: 5px;
-    padding-left: 5px;
+/* ===== MEDIA QUERIES - TABLETS (600px - 899px) ===== */
+@media (min-width: 600px) {
+  .site-main {
+    padding: 2rem;
+  }
+
+  .donations-hero {
+    height: 350px;
+    padding: 2rem 1.5rem;
+    padding-top: 6rem;
+  }
+
+  .donations-hero .section-title {
+    font-size: 2.1rem;
+    max-width: 900px;
+  }
+
+  .donations-hero p {
+    max-width: 700px;
+    font-size: 1rem;
+  }
+
+  .hero-btn {
+    padding: 0.9rem 2rem;
+    font-size: 1.05rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .form-donation {
+    padding: 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .form-title {
+    font-size: 1.5rem;
+  }
+
+  .form-label {
+    font-size: 1rem;
+  }
+
+  .form-control {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+
+  .donation-info li {
+    font-size: 1rem;
+    padding: 0.9rem 1.2rem;
+  }
 }
 
-.error-message.active {
-    display: block; 
-    color: #ff0000; 
-    font-weight: bold;
-}
+/* ===== MEDIA QUERIES - PANTALLAS GRANDES (900px+) ===== */
+@media (min-width: 900px) {
+  .site-main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
 
-.form-group .form-control.error {
-    border-color: #ff0000;
-    box-shadow: 0 0 0 0.1rem rgba(255, 0, 0, 0.25);
+  .donations-hero {
+    height: 100vh;
+    padding: 0;
+    padding-top: 0;
+  }
+
+  .donations-hero .section-title {
+    font-size: 2.8rem;
+  }
+
+  .donations-hero p {
+    max-width: 700px;
+    font-size: 1.1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .form-donation {
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    padding: 2.5rem;
+    border-radius: 10px;
+    max-width: 700px;
+  }
+
+  .section {
+    padding: 2.5rem;
+  }
+
+  .form-title {
+    font-size: 1.5rem;
+  }
 }
