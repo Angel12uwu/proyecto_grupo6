@@ -49,9 +49,8 @@ a {
   color: #17458f;
 }
 
-a:hover {
-  text-decoration: none;
-  transition: ease-in-out 0.5s;
+ul{
+  list-style: none;
 }
 
 .site-header {
