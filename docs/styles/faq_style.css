@@ -24,7 +24,7 @@ body {
 .faq-hero {
   text-align: center;
   padding: 3rem 1.5rem;
-  background: linear-gradient(135deg, #f8f9fb, #eef2f7);
+  background: radial-gradient(circle, #f8f9fb, #eef2f7);
   border-radius: 20px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
 }
