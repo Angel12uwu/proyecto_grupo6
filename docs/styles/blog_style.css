@@ -203,5 +203,20 @@ html, body {
 
   .post-excerpt {
     font-size: 0.95rem;
+    gap: 1.6rem;
+    padding: 0 1rem;
+  }
+
+  .post {
+    padding: 1.3rem;
+    border-radius: 14px;
+  }
+
+  .post-title {
+    font-size: 1.3rem;
+  }
+
+  .post-excerpt {
+    font-size: 0.95rem;
   }
 }
