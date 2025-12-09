@@ -1,27 +1,17 @@
-.site-main,
-.donations-hero,
-.section,
-.form-donation,
-.form-group,
-.form-control,
-.btn {
-  box-sizing: border-box;
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-.site-main {
-  padding: 1.5rem;
-  color: #141414;
-  line-height: 1.6;
-}
+
 
 .donations-hero {
   position: relative;
-  width: 100vw;
-  height: auto;
-  min-height: 100vh;
-  margin: 0;
-  padding: 3rem 1rem;
-  padding-top: 6rem;
+  width: 100vw;        
+  height: 100vh;
+  padding: 0;
+  border: 0;
 
   display: flex;
   flex-direction: column;
@@ -31,73 +21,63 @@
   text-align: center;
   color: #fff;
 
-  background-image: url("../img/3.jpg");
+  background-image: url("../img/3.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 
-  overflow: hidden;
+  overflow: hidden;   
 }
 
 .donations-hero,
 .container .donations-hero,
 .wrap .donations-hero,
 .site-content .donations-hero {
-  width: 100vw !important;
   max-width: 100vw !important;
+  width: 100vw !important;
   margin-left: calc(50% - 50vw) !important;
   margin-right: calc(50% - 50vw) !important;
-}
-
-.donations-hero.section {
-  background: transparent !important;
-  border: none !important;
-  padding: 0 !important;
 }
 
 .donations-hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(1px);
   z-index: 1;
 }
 
-.donations-hero .section-title,
+.donations-hero h1,
 .donations-hero p,
-.donations-hero .hero-btn {
+.hero-btn {
   position: relative;
   z-index: 2;
-  color: #fff !important;
 }
 
-.donations-hero .section-title {
-  font-size: 1.8rem;
-  font-weight: 700;
+.donations-hero h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
   margin-bottom: 0.8rem;
-  max-width: 100%;
 }
 
 .donations-hero p {
-  max-width: 90%;
+  max-width: 700px;
   margin: 0 auto 1.5rem;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   line-height: 1.6;
 }
 
 .hero-btn {
   display: inline-block;
   background-color: #17458f;
-  color: #fff !important;
-  padding: 0.8rem 1.5rem;
+  color: #fff;
+  padding: 0.8rem 1.8rem;
   border-radius: 40px;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
-  transition: background-color .25s ease, transform .2s ease;
-  position: relative;
-  z-index: 2;
+  transition: background-color .2s ease, transform .2s ease;
 }
 
 .hero-btn:hover {
@@ -106,7 +86,6 @@
 }
 
 .section {
-  background: #fff;
   padding: 2rem;
   border-radius: 10px;
   margin-bottom: 3rem;
@@ -120,7 +99,6 @@
   box-shadow: 0 6px 20px rgba(0,0,0,0.12);
 }
 
-.section-title,
 .section-subtitle {
   color: #17458f;
   margin-bottom: 1rem;
@@ -231,19 +209,6 @@
 .form-group .form-control.error {
   border-color: #ff0000;
   box-shadow: 0 0 0 0.1rem rgba(255, 0, 0, 0.25);
-}
-
-header {
-  margin-bottom: 0 !important;
-}
-
-.site-main {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-.donations-hero {
-  margin-top: -1px !important;
 }
 
 /* ===== MEDIA QUERIES - TABLETS (600px - 899px) ===== */
